@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #080808;
+  color: white;
+}
+
+.gb {
+  background-color: black;
+  opacity: 0.44;
+}
+/* Main Section */
+.main {
+  background-image: url("/assets/images/bg.jpg"); /* Fixed typo in path */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+nav {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+nav img {
+  width: 130px;
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero > :nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero > :nth-child(3) {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.EngBtn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnGs {
+  background: #e50914;
+  border-color: #e6131e;
+  color: #fff;
+  font-weight: none;
+  font-size: 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin: 20px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.SinBtn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  background-color: red;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main input {
+  padding: 1rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 4px;
+  font-size: larger;
+}
+
+.feature {
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.secImg {
+  position: relative;
+  max-width: 600px;
+}
+
+.secImg img {
+  width: 100%;
+  height: auto;
+}
+
+.secImg video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 73%;
+  height: 53%;
+  object-fit: cover;
+}
+
+.faq {
+  padding: 4rem 0;
+  background: #000;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.faqbox {
+  background: #2d2d2d;
+  margin: 1rem auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faqbox:hover {
+  background: #414141;
+}
+
+footer {
+  padding: 4rem 0;
+  color: #757575;
+}
+
+.footer {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero > :nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .hero > :nth-child(2),
+  .hero > :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  .secImg video {
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main input {
+    width: 100%;
+  }
+}
